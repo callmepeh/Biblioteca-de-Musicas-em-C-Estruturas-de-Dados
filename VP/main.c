@@ -37,6 +37,7 @@ void menu(){
 }
 
 int main(){
+    setvbuf(stdout, NULL, _IONBF, 0);
     Arvore *biblioteca = inicializar();
     int opcao;
 

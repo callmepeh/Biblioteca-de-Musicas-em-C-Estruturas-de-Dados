@@ -81,24 +81,44 @@ Ambas as árvores são isomorfas (uma árvore Rubro-Negra pode ser mapeada diret
 
 ## 🚀 Como Compilar e Executar
 
-Para rodar a aplicação, você precisará de um compilador C (como o `gcc`).
+### 💻 1. Executando a Interface Gráfica (Desktop GUI)
 
-### Executando a Árvore Rubro-Negra (VP)
+Para desfrutar de uma experiência visual interativa moderna com visualização de caminhos de busca, você pode rodar a nossa interface desenvolvida em Python.
 
-O submódulo `VP` possui uma interface interativa via console completa (CLI) que permite testar todas as funcionalidades de cadastro, listagem, busca e remoção.
+1. **Compilar os motores em C**:
+   ```bash
+   python3 build_all.py
+   ```
+   *(Este script compilará automaticamente os executáveis na pasta `VP/` e `2-3/`)*.
+2. **Executar a interface**:
+   ```bash
+   python3 interface.py
+   ```
+3. **Gerar Executável Standalone (.exe ou binário único)**:
+   Se você tiver o `pyinstaller` instalado (`pip install pyinstaller`), o script `build_all.py` empacotará a interface gráfica e os executáveis em C em um único arquivo portátil dentro da pasta `dist/`:
+   ```bash
+   python3 build_all.py
+   ```
 
-1. Navegue até a pasta `VP`:
-   ```bash
-   cd VP
-   ```
-2. Compile os arquivos fontes:
-   ```bash
-   gcc main.c funcoes.c -o programa_vp
-   ```
-3. Execute o programa:
-   ```bash
-   ./programa_vp
-   ```
+---
+
+### 🖥️ 2. Executando via Terminal (CLI)
+
+Se preferir interagir diretamente com o menu do console de cada motor:
+
+#### **Módulo Árvore Rubro-Negra (VP)**
+```bash
+cd VP
+gcc main.c funcoes.c -o programa_vp
+./programa_vp
+```
+
+#### **Módulo Árvore 2-3**
+```bash
+cd 2-3
+gcc main.c funcoes.c -o programa_2_3
+./programa_2_3
+```
 
 ---
 

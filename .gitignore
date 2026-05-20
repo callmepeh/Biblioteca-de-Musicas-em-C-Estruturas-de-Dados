@@ -1,0 +1,31 @@
+# Compilados C e Executáveis
+*.o
+*.obj
+*.exe
+VP/programa_vp
+2-3/programa_2_3
+programa.exe
+VP.zip
+
+# Python e Empacotamento
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Artefatos do PyInstaller
+build/
+dist/
+*.spec
+
+# Configurações de IDEs e Editores
+.vscode/
+.idea/
+*.suo
+*.user
+.DS_Store
